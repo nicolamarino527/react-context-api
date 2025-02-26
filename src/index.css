@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 70px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.posts-title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.bg {
+  background-color: rgb(236, 236, 236);
+  height: 100%;
+
+}
+
+.card {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 550px;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.card-detail {
+  width: 800px;
+  height: auto;
+  font-size: 20px;
+}
+
+.title-detail {
+  font-size: 40px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+
+.post-list {
+  padding-left: 18%;
+  padding-right: 18%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.new-post {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.form {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+.active {
+  background-color: rgb(229, 229, 229);
+}
