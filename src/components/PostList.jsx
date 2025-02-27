@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import axios from 'axios';
+import { usePost } from '../contexts/PostContext';
 
 export default function PostList() {
     // stato per i post
@@ -50,4 +51,14 @@ export default function PostList() {
             </div>
         </div >
     );
+
+    // <>
+    //     {posts.map((post) => (
+    //         <PostCard />
+    //     ))
+
+    //     }
+
+    // </>
+
 }
