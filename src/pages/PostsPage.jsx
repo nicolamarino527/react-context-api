@@ -1,6 +1,7 @@
 import PostList from "../components/PostList";
 import { usePosts } from "../contexts/PostContext";
-
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function PostsPage() {
 
