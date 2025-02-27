@@ -10,6 +10,9 @@ import NavBar from './components/NavBar';
 import PostDetailPage from './pages/PostDetailPage';
 import NewPostPage from './pages/NewPostPage';
 
+// importiamo il post context
+import PostContext from './contexts/PostContext';
+
 
 function App() {
   return (
