@@ -11,24 +11,27 @@ import PostDetailPage from './pages/PostDetailPage';
 import NewPostPage from './pages/NewPostPage';
 
 // importiamo il post context
-import PostContext from './contexts/PostContext';
+import { PostProvider } from './contexts/PostContext';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-        <Route path='/posts'>
-          <Route index element={<PostsPage />} />
-          <Route path=":id" element={<PostDetailPage />} />
-          <Route path="newpost" element={<NewPostPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    // aggiungiamo il post provide
+    <PostProvider>
+      <BrowserRouter>
+        <Header />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path='/posts'>
+            <Route index element={<PostsPage />} />
+            <Route path=":id" element={<PostDetailPage />} />
+            <Route path="newpost" element={<NewPostPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </PostProvider>
   );
 }
 
