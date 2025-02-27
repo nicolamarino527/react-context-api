@@ -6,13 +6,13 @@ import { data } from "react-router-dom";
 const PostContext = createContext();
 
 // stabiliamio provider per fornire i dati dal padre al componente figlio 
-export const PostProvider = ({ children }) => {
-    const [post, setPosts] = useState([])
+export function PostProvider({ children }) {
+    const [posts, setPosts] = useState([]);
 
 
     //  funzione per caricare i post
-    const fetchPosts = (data) => {
-        setPosts(data)
+    const fetchPosts = (newPosts) => {
+        setPosts(newPosts);
     }
 
 
@@ -23,7 +23,7 @@ export const PostProvider = ({ children }) => {
     )
 }
 // hook per consumare il contesto 
-export const usePost = () => {
+export const usePosts = () => {
     return useContext(PostContext)
 }
 

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import axios from 'axios';
-import { usePosts } from '../contexts/PostContext';
+import { usePosts } from "../contexts/PostContext";
 import PostCard from './PostCard';
 
 export default function PostList() {
